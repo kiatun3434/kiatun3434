@@ -20,3 +20,4 @@ end)
 Section:NewButton("SPAWNPOINT", "ButtonInfo", function()
     print(setclipboard(tostring(game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value)))
 end)
+--
