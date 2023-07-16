@@ -1,3 +1,4 @@
+
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Fisrt x HUB", "Synapse")
 local Tab = Window:NewTab("Position and CFrame")
@@ -19,5 +20,9 @@ Section:NewButton("Fast_Attack", "ButtonInfo", function()
 end)
 Section:NewButton("SPAWNPOINT", "ButtonInfo", function()
     print(setclipboard(tostring(game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value)))
+end)
+--
+Section:NewButton("Code", "ButtonInfo", function()
+    print(loadstring(game:HttpGet("https://raw.githubusercontent.com/kiatun3434/kiatun3434/main/CODE"))()
 end)
 --
