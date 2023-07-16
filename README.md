@@ -23,6 +23,6 @@ Section:NewButton("SPAWNPOINT", "ButtonInfo", function()
 end)
 --
 Section:NewButton("Code", "ButtonInfo", function()
-    print(loadstring(game:HttpGet("https://raw.githubusercontent.com/kiatun3434/kiatun3434/main/CODE"))()
+    print(loadstring(game:HttpGet("https://raw.githubusercontent.com/kiatun3434/kiatun3434/main/CODE"))())
 end)
 --
