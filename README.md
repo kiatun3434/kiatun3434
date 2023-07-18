@@ -1,5 +1,3 @@
-
-
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Fisrt x HUB", "Synapse")
 local Tab = Window:NewTab("Position and CFrame")
@@ -35,4 +33,12 @@ Section:NewButton("SPAWNPOINT", "ButtonInfo", function()
 end)
 Section:NewButton("AUTOSTATS", "ButtonInfo", function()
     print(loadstring(game:HttpGet("https://raw.githubusercontent.com/kiatun3434/kiatun3434/main/AUTOSTATS"))())
+end)
+Section:NewButton("QUEST 1", "ButtonInfo", function()
+    print(setclipboard(tostring("local args = {
+    [1] = "StartQuest",
+    [2] = Quest,
+    [3] = QuestNumber
+}
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))")))
 end)
