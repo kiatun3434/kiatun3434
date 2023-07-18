@@ -34,11 +34,3 @@ end)
 Section:NewButton("AUTOSTATS", "ButtonInfo", function()
     print(loadstring(game:HttpGet("https://raw.githubusercontent.com/kiatun3434/kiatun3434/main/AUTOSTATS"))())
 end)
-Section:NewButton("QUEST 1", "ButtonInfo", function()
-    print(setclipboard(tostring("local args = {
-    [1] = "StartQuest",
-    [2] = Quest,
-    [3] = QuestNumber
-}
-game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))")))
-end)
